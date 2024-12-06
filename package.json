@@ -8,11 +8,11 @@
   "files": [
     "dist"
   ],
-  "author": "Daniel Schäfer <your-email@example.com>",
+  "author": "Daniel Schäfer",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && cp src/*.css dist",
-    "prepare": "rm -rf dist && npm run build",
+    "prepare": "rm -r dist && npm run build",
     "prepublishOnly": "npm test",
     "test": "xo ./src ./storybook"
   },
@@ -21,24 +21,24 @@
     "npm": ">=7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.0",
-    "@babel/core": "^7.22.0",
-    "@babel/preset-env": "^7.22.0",
-    "@babel/preset-react": "^7.22.0",
-    "eslint-config-xo-react": "^0.44.0",
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "eslint-config-xo-react": "^0.24.0",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-   "rollup": "^3.0.0",
-     "rollup-plugin-babel": "^4.3.3",
-  "rollup-plugin-commonjs": "^10.1.0",
-  "rollup-plugin-node-resolve": "^5.2.0",
-    "@rollup/plugin-peer-deps-external": "^2.2.4",
-    "xo": "^0.50.0"
+    "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "xo": "^0.54.0"
   },
   "peerDependencies": {
     "prop-types": "^15.8.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "xo": {
     "space": true,
