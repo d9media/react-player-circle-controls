@@ -36,10 +36,9 @@
     "xo": "^0.53.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": ">=16.8.0 <=18.3.0",
-    "react-dom": ">=16.8.0 <=18.3.0"
-  },
+  "react": ">=16.8.0 <=18.4.0",
+  "react-dom": ">=16.8.0 <=18.4.0"
+},
   "dependencies": {
     "prop-types": "^15.8.1"
   },
