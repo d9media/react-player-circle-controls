@@ -1,12 +1,14 @@
 {
   "name": "react-player-circle-controls",
-  "version": "0.4.1",
+  "version": "0.4.0",
   "description": "Circular UI controls for playing media",
   "repository": "github:d9media/react-player-circle-controls",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "files": ["dist"],
-  "author": "Jamie Sinclair <jamsinclairnz@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "author": "Daniel Schäfer <your-email@example.com>",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && cp src/*.css dist",
@@ -15,27 +17,28 @@
     "test": "xo ./src ./storybook"
   },
   "engines": {
-    "node": ">=12",
-    "npm": ">=6"
+    "node": ">=14",
+    "npm": ">=7"
   },
-
   "devDependencies": {
-    "@babel/cli": "^7.22.9",
-    "@babel/core": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
-    "@babel/preset-react": "^7.22.9",
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^25.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@babel/cli": "^7.22.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "eslint-config-xo-react": "^0.44.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "rollup": "^3.29.5",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "xo": "^0.53.0"
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-peer-deps-external": "^3.0.0",
+    "xo": "^0.50.0"
   },
-
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": ">=16.8.0 <=18.4.0",
-    "react-dom": ">=16.8.0 <=18.4.0"
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "xo": {
     "space": true,
