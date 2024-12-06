@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && cp src/*.css dist",
-    "prepare": "rm -r dist && npm run build",
+"prepare": "npm run build",
     "prepublishOnly": "npm test",
     "test": "xo ./src ./storybook"
   },
