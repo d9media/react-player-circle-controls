@@ -18,6 +18,7 @@
     "node": ">=12",
     "npm": ">=6"
   },
+{
   "devDependencies": {
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
@@ -26,10 +27,11 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-peer-deps-external": "^3.0.0",
     "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
     "xo": "^0.53.0"
-  },
+  }
+,
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": ">=16.8.0 <=18.4.0",
